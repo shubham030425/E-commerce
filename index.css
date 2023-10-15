@@ -1,0 +1,136 @@
+
+*{
+    box-sizing: border-box;   
+}
+
+body{
+    background-image: radial-gradient(circle, #000000, #3f131f, #7c1530, #bd0d3a, #ff073a);
+    background-size: cover;
+    font-family: arial;
+    color: #ffff;
+    font-size: 15px;
+    margin: 0;
+}
+
+
+
+img{
+    max-width: 100%;
+}
+:focus{
+    outline: none;
+}
+
+.wrapper{
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.inner{
+    padding: 20px;
+    background: #000000;
+    max-width: 850px;
+    margin: auto;
+    display: flex;
+    border: 5px;
+}
+
+
+input,select{
+    background: transparent;
+    color: #ffffff;
+}
+
+select{
+    color: gray;
+    cursor: pointer;
+    background: transparent;    
+}
+select option[value=""][disabled]{
+    display: none;
+}
+
+.inner .image-holder{
+    width: 50%;
+}
+
+.inner form{
+    width: 50%;
+    padding: 35px 0px 50px 50px;
+}
+
+.form-group{
+    display: flex;
+}
+
+.form-group input{
+    width: 50%;
+}
+
+.form-group input:first-child{
+    margin-right: 25px;
+}
+.form-wrapper{
+    position: relative;    
+}
+
+.form-control{
+    border: none;
+    border-bottom: 2px solid #ff073a;
+    display: block;
+    width: 100%;
+    height: 30px;
+    padding-right: 0;
+    margin-bottom: 25px;
+}
+
+button{
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 51px;
+    margin: auto;
+    margin-top: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    padding: 25px 25px 25px 25px;
+    background: #ff073a;
+    font-size: 15px;
+    color: #ffffff;
+    text-align: center;
+    transition: 0.5s;
+}
+button:hover{
+    background: transparent;
+    color: #bd0d3a;
+    border: 2px solid #ff073a;
+    transition: 0.5s ease-in-out;
+}
+
+@media(max-width:767px){
+   
+    .inner{
+        display: block;
+    }
+    .inner .image-holder{
+        width: 100%;
+    }
+    .inner form{
+        width: 100%;
+        padding: 40px 0 30px;
+    
+    }
+    button{
+        margin-top: 60px;
+
+    }
+    
+}
+
