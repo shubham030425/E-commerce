@@ -13,6 +13,7 @@
     <link rel="mask-icon" href="favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="wrapper">
@@ -22,16 +23,16 @@
             </div>
             <form>
                 <div class="from-group">
-                    <input type="text" placeholder="First name" class="form-control">
-                    <input type="text" placeholder="Last name" class="form-control">
+                    <input type="text" placeholder="First name" class="form-control" required>
+                    <input type="text" placeholder="Last name" class="form-control" required>
                 </div>
 
                 <div class="from-wrapper">
-                    <input type="email" placeholder="Email" class="form-control">
+                    <input type="email" placeholder="Email" class="form-control" required>
                 </div>
 
                 <div class="from-wrapper">
-                    <input type="tel" placeholder="Contact" class="form-control">
+                    <input type="tel" placeholder="Contact" class="form-control" required>
                 </div>
                 
                 <div class="form-wrapper">
@@ -39,25 +40,35 @@
                         <option value="" disabled selected>Gender</option>
                         <option value="male">Male</option>
                         <option value="male">Female</option>
-                        <option value="male">prefer not to say</option>
+                        <option value="male">Prefer not to say</option>
                     </select>
                 </div>
 
                 <div class="from-wrapper">
-                    <input type="text" placeholder="Age" class="form-control">
+                    <input type="text" placeholder="Age" class="form-control" required>
                 </div>
 
                 <div class="from-wrapper">
-                    <input type="text" placeholder="College Name" class="form-control">
+                    <input type="text" placeholder="College Name" class="form-control" required>
                 </div>
 
                 <div class="from-wrapper">
-                    <input type="text" placeholder="Coupon code" class="form-control">
+                    <input type="text" placeholder="Coupon code" class="form-control" required>
                 </div>
                 <button>Submit</button>
             </form>
         </div>
 
     </div>
+    <footer>
+        <div class="footercontainer">
+            <div class="socialicons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <p>Copyright &copy;2023 <span>By DRIZ 2023</span></p>
+        </div>
+    </footer>
 </body>
 </html>
