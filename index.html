@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DRIZ</title>
     <link rel="stylesheet" href="index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display&display=swap" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0.16/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0.16/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0.16/favicon-16x16.png">
-    <link rel="manifest" href="favicon_package_v0.16/site.webmanifest">
-    <link rel="mask-icon" href="favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -23,8 +22,7 @@
             </div>
             <form>
                 <div class="from-group">
-                    <input type="text" placeholder="First name" class="form-control" required>
-                    <input type="text" placeholder="Last name" class="form-control" required>
+                    <input type="text" placeholder="Full name" class="form-control" required>
                 </div>
 
                 <div class="from-wrapper">
@@ -39,21 +37,34 @@
                     <select name="" class="form-control">
                         <option value="" disabled selected>Gender</option>
                         <option value="male">Male</option>
-                        <option value="male">Female</option>
-                        <option value="male">Prefer not to say</option>
+                        <option value="female">Female</option>
+                        <option value="other">Prefer not to say</option>
+                    </select>
+                </div>
+
+                
+                <div class="form-wrapper">
+                    <select name="" class="form-control">
+                        <option value="" disabled selected>College Name</option>
+                        <option value="mcc">Mulund College of Commerce</option>
+                        <option value="kelkar">KET's V. G. Vaze College of Arts, Science and Commerce</option>
+                        <option value="sies">Sies College Of Arts, Science & Commerce</option>
                     </select>
                 </div>
 
                 <div class="from-wrapper">
-                    <input type="text" placeholder="Age" class="form-control" required>
+                    <input type="text" placeholder="Fest Code/Campus Ambassador Code" class="form-control" required>
                 </div>
-
-                <div class="from-wrapper">
-                    <input type="text" placeholder="College Name" class="form-control" required>
-                </div>
-
+                
                 <div class="from-wrapper">
                     <input type="text" placeholder="Coupon code" class="form-control" required>
+                </div>
+                <div class="form-wrapper">
+                    <select name="" class="form-control">
+                        <option value="" disabled selected>Mode of Payment</option>
+                        <option value="Cash">Cash</option>
+                        <option value="Online">Online</option>
+                    </select>
                 </div>
                 <button>Submit</button>
             </form>
